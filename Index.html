@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre de tu Empresa - Inicio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Nombre de tu Empresa</div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#productos">Productos</a></li>
+            </ul>
+            <div class="cart-icon" id="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <h1>Bienvenidos a Nombre de tu Empresa</h1>
+            <p>La mejor calidad para ti.</p>
+        </section>
+
+        <section id="nosotros" class="about-us">
+            <h2>Sobre Nosotros</h2>
+            <div class="about-container">
+                <div class="card">
+                    <h3>Misión</h3>
+                    <p>Ser una empresa líder en la industria, ofreciendo productos de alta calidad que superen las expectativas de nuestros clientes.</p>
+                </div>
+                <div class="card">
+                    <h3>Visión</h3>
+                    <p>Convertirnos en la marca preferida de nuestros consumidores, expandiendo nuestra presencia a nivel nacional e internacional.</p>
+                </div>
+                <div class="card">
+                    <h3>Valores Corporativos</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Integridad: Actuamos con honestidad y transparencia.</li>
+                        <li><i class="fas fa-check-circle"></i> Calidad: Nos comprometemos con la excelencia en cada detalle.</li>
+                        <li><i class="fas fa-check-circle"></i> Innovación: Buscamos constantemente nuevas formas de mejorar.</li>
+                        <li><i class="fas fa-check-circle"></i> Pasión: Hacemos nuestro trabajo con dedicación y entusiasmo.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="productos" class="products">
+            <h2>Nuestros Productos</h2>
+            <div class="product-grid" id="product-grid">
+                </div>
+        </section>
+    </main>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <div id="cart-items">
+                </div>
+            <div class="cart-total">
+                <p>Total: $<span id="cart-total-price">0.00</span></p>
+            </div>
+            <button id="checkout-btn">Pagar</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Nombre de tu Empresa. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
